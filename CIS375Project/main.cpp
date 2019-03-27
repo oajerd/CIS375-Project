@@ -134,6 +134,7 @@ int main()
   
   cities_other.dump();
 
+  system("pause");
   
   return 0;
 }

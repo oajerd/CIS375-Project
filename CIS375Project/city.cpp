@@ -1,4 +1,5 @@
 #include "city.h"
+#include<string>
 
 // TEST' CLASS
 

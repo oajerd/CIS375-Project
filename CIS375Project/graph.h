@@ -1,6 +1,7 @@
 #include<iostream>
 #include<iomanip>
 #include <stdexcept>
+#include<string>
 
 /**
  * File: graph.h
@@ -533,7 +534,7 @@ namespace GraphNameSpace
       weight = "DIRECTED";
     else
       weight = "UNDIRECTED";
-//     
+    
     cout << "dumping graph: " << type << "   " << weight  << "    vertices:" << vertexCount() << "    edges:" << edgeCount() << endl;
     cout << left << setw(25) <<  "VERTEX " << setw(50) << "ADJACENT VERTICES" << endl;
     cout << left << setw(25) <<  "-----------------" << setw(50) << "---------------------------------------------------" << endl;
