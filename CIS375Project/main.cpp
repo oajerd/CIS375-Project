@@ -11,13 +11,17 @@
 #include "station.h"
 #include "fileReader.h"
 #include"login.h"
+#include"CIS375Project/output.h"
 
 
 using namespace std;
 using namespace GraphNameSpace;
 int main() {
     
-	login();
+	//login();
+
+	output();
+
 
 
     
@@ -64,6 +68,8 @@ int main() {
 	configuration.displayConfig();
 
     //cout << stations.findVertex(hub1);
+
+	
 
 	system("pause");
 
