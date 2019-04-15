@@ -1,0 +1,29 @@
+﻿  main.cpp
+C:\Users\abdel\source\repos\CIS375-Project\CIS375Project\graph.h(162): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+  C:\Users\abdel\source\repos\CIS375-Project\CIS375Project\graph.h(261): note: see reference to class template instantiation 'GraphNameSpace::Graph<Type>' being compiled
+C:\Users\abdel\source\repos\CIS375-Project\CIS375Project\graph.h(172): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\abdel\source\repos\CIS375-Project\CIS375Project\graph.h(202): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\abdel\source\repos\CIS375-Project\CIS375Project\graph.h(222): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\abdel\source\repos\CIS375-Project\CIS375Project\graph.h(232): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\abdel\source\repos\CIS375-Project\CIS375Project\graph.h(340): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\abdel\source\repos\CIS375-Project\CIS375Project\graph.h(554): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\abdel\source\repos\CIS375-Project\CIS375Project\graph.h(618): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\abdel\source\repos\CIS375-Project\CIS375Project\graph.h(673): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\abdel\source\repos\CIS375-Project\CIS375Project\graph.h(815): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\abdel\source\repos\CIS375-Project\CIS375Project\structure_objects.h(179): warning C4018: '<': signed/unsigned mismatch
+C:\Users\abdel\source\repos\CIS375-Project\CIS375Project\structure_objects.h(189): warning C4018: '<': signed/unsigned mismatch
+C:\Users\abdel\source\repos\CIS375-Project\CIS375Project\structure_objects.h(199): warning C4018: '<': signed/unsigned mismatch
+C:\Users\abdel\source\repos\CIS375-Project\CIS375Project\structure_objects.h(209): warning C4018: '<': signed/unsigned mismatch
+C:\Users\abdel\source\repos\CIS375-Project\CIS375Project\maintenance.h(64): warning C4018: '<': signed/unsigned mismatch
+C:\Users\abdel\source\repos\CIS375-Project\CIS375Project\maintenance.h(68): warning C4018: '<': signed/unsigned mismatch
+C:\Users\abdel\source\repos\CIS375-Project\CIS375Project\maintenance.h(75): warning C4018: '<': signed/unsigned mismatch
+C:\Users\abdel\source\repos\CIS375-Project\CIS375Project\config.h(73): warning C4018: '<': signed/unsigned mismatch
+C:\Users\abdel\source\repos\CIS375-Project\CIS375Project\fileReader.h(445): warning C4018: '<': signed/unsigned mismatch
+C:\Users\abdel\source\repos\CIS375-Project\CIS375Project\fileReader.h(461): warning C4018: '<': signed/unsigned mismatch
+C:\Users\abdel\source\repos\CIS375-Project\CIS375Project\fileReader.h(818): warning C4101: 'typeCount': unreferenced local variable
+C:\Users\abdel\source\repos\CIS375-Project\CIS375Project\fileReader.h(955): warning C4018: '<': signed/unsigned mismatch
+C:\Users\abdel\source\repos\CIS375-Project\CIS375Project\fileReader.h(977): warning C4018: '<': signed/unsigned mismatch
+C:\Users\abdel\source\repos\CIS375-Project\CIS375Project\graph.h(352): warning C4101: 'deleteIndex': unreferenced local variable
+C:\Users\abdel\source\repos\CIS375-Project\CIS375Project\graph.h(350): warning C4101: 'edgeWeightNum': unreferenced local variable
+  LINK : C:\Users\abdel\Source\Repos\CIS375-Project\CIS375Project\Debug\CIS375Project.exe not found or not built by the last incremental link; performing full link
+  CIS375Project.vcxproj -> C:\Users\abdel\Source\Repos\CIS375-Project\CIS375Project\Debug\CIS375Project.exe

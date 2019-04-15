@@ -1,90 +1,101 @@
+//
+//  city.cpp
+//  GraphTwo
+//
+//  Created by Oussama Ajerd on 3/20/19.
+//  Copyright © 2019 Oussama Ajerd. All rights reserved.
+//
+
+#include <stdio.h>
 #include "station.h"
-#include<string>
 
 // TEST' CLASS
 
 Station::Station()
 {
-	name = "";
+    name = "";
 }
 
 Station::Station(string r)
 {
-	name = r;
+    name = r;
 }
 
-Station::Station(string r, char type, int capacity, int lowBoard, int highBoard, int lowUnboard, int highUnboard, float ticketPrice) {
-	name = r;
-	type = type;
-	capcity = capacity;
-	lowBoard = lowBoard;
-	highBoard = highBoard;
-	highUnboard = highUnboard;
-	lowUnboard = lowUnboard;
-	ticketPrice = ticketPrice;
-
+Station::Station(string r, char type, int capacity, int lowBoard, int highBoard, int lowUnboard, int highUnboard, float ticketPrice)
+{
+    name = r;
+    type = type;
+    capacity = capacity;
+    lowBoard = lowBoard;
+    highBoard = highBoard;
+    lowUnboard = lowUnboard;
+    highUnboard = highUnboard;
+    ticketPrice = ticketPrice;
+    
 }
 
 void Station::setName(string r)
 {
-	name = r;
+    name = r;
 }
 
 string Station::getName() const
 {
-	return name;
+    return name;
 }
 
-void Station::setStationInfo(string r, char type, int capacity, int lowBoard, int highBoard, int lowUnboard, int highUnboard, float ticketPrice) {
-	name = r;
-	type = type;
-	capcity = capacity;
-	lowBoard = lowBoard;
-	highBoard = highBoard;
-	highUnboard = highUnboard;
-	lowUnboard = lowUnboard;
-	ticketPrice = ticketPrice;
-}
-
-bool Station::operator ==(const Station& obj)const
+void Station::setStationInfo(string r, char type, int capacity, int lowBoard, int highBoard, int lowUnboard, int highUnboard, float ticketPrice)
 {
-	if (getName() == obj.getName())
-		return true;
-	else
-		return false;
+    name = r;
+    type = type;
+    capacity = capacity;
+    lowBoard = lowBoard;
+    highBoard = highBoard;
+    lowUnboard = lowUnboard;
+    highUnboard = highUnboard;
+    ticketPrice = ticketPrice;
+}
+
+bool Station::operator ==(const Station & obj)const
+{
+    if(getName()==obj.getName())
+        return true;
+    else
+        return false;
 }
 
 bool Station::operator != (const Station & obj)const
 {
-	return !(*this == obj);
+    return !(*this == obj);
 }
 
 bool Station::operator<(const Station & obj)const
 {
-	if (getName() < obj.getName())
-		return true;
-	else
-		return false;
+    if(getName() < obj.getName())
+        return true;
+    else
+        return false;
 }
 
 bool Station::operator > (const Station & obj)const
 {
-	return !(*this < obj);
+    return !(*this < obj);
 }
 
 bool Station::operator <= (const Station & obj)const
 {
-	return *this < obj || *this == obj;
+    return *this < obj || *this == obj;
 }
 
 bool Station::operator >= (const Station & obj)const
 {
-	return !(*this < obj);
+    return !(*this < obj);
 }
 
-ostream& operator <<(ostream& output, Station& StationObj)
+ostream& operator <<(ostream& output, Station& stationObj)
 {
-	output << StationObj.getName();
-
-	return output;
+    output << stationObj.getName();
+    
+    return output;
 }
+
