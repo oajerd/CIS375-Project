@@ -9,10 +9,9 @@
 #include<iostream>
 #include "graph.h"
 #include "station.h"
-#include "fileReader.h"
 #include"login.h"
+#include"fileReader.h"
 #include"CIS375Project/output.h"
-
 
 using namespace std;
 using namespace GraphNameSpace;
@@ -22,15 +21,11 @@ int main() {
 
 	output();
 
-
-
-    
    // Station hub1("hub1");
    // Station hub2("hub2");
     
     //Station station1("station1", 'P', 2, 250, 500, 100, 350, 7.00);
    // Station station2("station2", 'P', 4, 200, 300, 200, 350, 9.00);
-    
     
     Graph<Station> stations(UNWEIGHTED);
     
@@ -47,8 +42,18 @@ int main() {
 
 	structureFileRead(str, stations);
 
+	Maintenance_Schedule schedule1;
+
+	str = "dailyRoutes.txt";
+
+	dailyRoutesFileRead(str, stations, schedule1);
+
+	str = "repeatableRoutes.txt"; //"structure.txt";
+
+	rRoutesFileRead(str, stations);
+
     stations.dump();
-    
+
 	Maintenance_Schedule schedule;
 
 	str = "maintenance.txt";
@@ -69,7 +74,15 @@ int main() {
 
     //cout << stations.findVertex(hub1);
 
+	for (int i = 0; i < dailyRoutes.size(); i++) {
 	
+		cout << "DAY: " << i + 1 << endl;
+
+		dailyRoutes.at(i).displayRoutes();
+
+		cout << endl;
+
+	}
 
 	system("pause");
 

@@ -1,36 +1,13 @@
-#ifndef _TRAIN_STRUCTURE_OBJECTS_H_
-#define _TRAIN_STRUCTURE_OBJECTS_H_
+#ifndef _STRUCTURE_OBJECTS_H_
+#define _STRUCTURE_OBJECTS_H_
 
 #include<iostream>
 #include <vector>
 #include <string>
+#include "Route.h"
 #include "station.h"
+#include "Time.h"
 
-struct Time {
-
-public:
-
-	int hours;
-
-	int minutes;
-
-	Time(int h = 0, int m = 0) {
-
-		hours = h;
-
-		minutes = m;
-
-	}
-
-	void setTime(int h = 0, int m = 0) {
-
-		hours = h;
-
-		minutes = m;
-
-	}
-
-};
 
 class Node {
 
@@ -120,7 +97,47 @@ class Locomotive {
 
 	string type; //input3
 
+	int routeIndex;
+
+	Station currentLocation;
+
+	Station nextLocation;
+
+	Route trainRoute;
+
 public:
+
+	void assignRoute(Route r) {
+	
+		trainRoute.setInfo(r.trainType, r.arrivalTimes, r.type, r.startTime, r.capacity, r.stations);
+
+	}
+
+	void setLocation(Station x) {
+
+		currentLocation = x;
+
+	}
+			
+			
+	Station getLocation() {
+		
+		return currentLocation;
+		
+	}
+
+	Station getDestination(){
+
+		return trainRoute.next(routeIndex);
+		
+	}
+
+	Station nextStation() {
+	
+		currentLocation = nextLocation;
+		nextLocation = trainRoute.next(routeIndex);
+	
+	}
 
 	Locomotive() {
 
@@ -128,7 +145,7 @@ public:
 
 	}
 
-	Locomotive(string input1, Station input2, string input3) {
+	Locomotive(string input1, Station input2, string input3, int ri = -1) {
 
 		name = input1;
 
@@ -136,11 +153,25 @@ public:
 
 		type = input3;
 
+		routeIndex = ri;
+
 	}
 
 	string getName() {
 
 		return name;
+
+	}
+
+	Station setStation(Station s) {
+	
+		hub = s;
+
+	}
+
+	Station getStation() {
+
+		return hub;
 
 	}
 

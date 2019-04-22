@@ -12,5 +12,8 @@ void output() {
 	out.open("output.txt");
 	out << "Hello World" << endl;
 	out.close();
-
+	
 }
+
+
+
